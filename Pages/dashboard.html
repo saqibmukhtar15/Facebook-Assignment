@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Dashboard</title>
+    <link rel="stylesheet" href="../Style/Dashboard.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <span class="navbar-logo">facebook</span>
+        </div>
+        <div class="navbar-right">
+            <span class="nav-greeting">Welcome, <span id="userName"></span></span>
+            <button class="logout-btn" id="logoutBtn">Log Out</button>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-body">
+
+        <!-- Profile Card -->
+        <div class="profile-card">
+            <div class="profile-cover"></div>
+            <div class="profile-info">
+                <div class="profile-img" id="profile-img"></div>
+                <div class="profile-name-area">
+                    <h2 id="fullName"></h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- User Info Card -->
+        <div class="info-section">
+            <h3>Account Information</h3>
+
+            <div class="info-row">
+                <span class="info-icon">👤</span>
+                <span class="info-label">Full Name</span>
+                <span class="info-value" id="fullNameDetail"></span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-icon">📧</span>
+                <span class="info-label">Email / Mobile</span>
+                <span class="info-value" id="emailOrMobile"></span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-icon">🎂</span>
+                <span class="info-label">Date of Birth</span>
+                <span class="info-value" id="dob"></span>
+            </div>
+
+            <div class="info-row">
+                <span class="info-icon">⚧</span>
+                <span class="info-label">Gender</span>
+                <span class="info-value" id="gender"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../JavaScript/Dashboard.js"></script>
+</body>
+
+</html>
